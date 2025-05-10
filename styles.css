@@ -1,0 +1,329 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #0F0F0F;
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centered content */
+    padding: 20px;
+    background: #111;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: yellow;
+    position: absolute; /* Absolute positioning for logo */
+    left: 20px; /* Position the logo to the left */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: yellow;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 100px 50px;
+    background: linear-gradient(to right, #111, #222);
+    margin-top: 60px;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h3 {
+    font-size: 18px;
+    color: #aaa;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    color: white;
+    margin: 20px 0;
+}
+
+.hero-content p {
+    font-size: 16px;
+    color: #bbb;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: yellow;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background: orange;
+    transform: translateY(-2px);
+}
+
+/* Hero Image */
+.hero-image img {
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Sections */
+section {
+    padding: 80px 50px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: yellow;
+}
+
+/* Services Page Specific Styles */
+.services {
+    padding: 100px 50px;
+    background: #0F0F0F;
+    margin-top: 60px; /* Account for fixed navbar */
+}
+
+.services-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    color: #bbb;
+    font-size: 18px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.service-card {
+    background: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 255, 0, 0.1);
+}
+
+.service-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.service-card:hover .service-image img {
+    transform: scale(1.1);
+}
+
+/* Tools Section */
+.tools {
+    background: #222;
+}
+
+.tool {
+    background: #333;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.tool h3 {
+    color: yellow;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.tool p {
+    margin-bottom: 15px;
+}
+.contact {
+    padding: 80px 50px;
+    background: #333; /* Light background for contrast */
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.contact button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #fbff00; /* Bootstrap primary blue color */
+    color: rgb( #333);
+    
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #f7f45a; /* Darker blue on hover */
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact ul li {
+    margin-bottom: 10px;
+}
+/* Stakeholders Section */
+.stakeholders {
+    background: #222;
+}
+
+.stakeholders ul {
+    list-style: none;
+}
+
+.stakeholders ul li {
+    margin-bottom: 10px;
+}
+
+.stakeholders ul li a {
+    color: yellow;
+    text-decoration: none;
+}
+
+
+
+
+/* Stakeholders Section */
+.stakeholders {
+    padding: 80px 50px;
+    background: #222;
+}
+
+.stakeholders-container {
+    display: flex;
+    justify-content: center; /* Align items centrally */
+    flex-wrap: wrap; /* Allow wrapping of items when screen size is small */
+    gap: 20px; /* Space between each stakeholder */
+}
+
+.stakeholder {
+    text-align: center; /* Center text under each logo */
+    color: yellow; /* Adjust if needed */
+}
+
+.stakeholder img {
+    width: 100px; /* Adjust logo size as necessary */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between image and name */
+}
+
+
+/* Partners section styling */
+.partners-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.partner {
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.partner img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Optional: Make partner names bold */
+.partner p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+
+.stakeholders ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    padding: 30px;
+    text-align: center;
+    margin-top: 60px;
+}
